@@ -8,18 +8,22 @@ public class AskForInput {
 
     ReadData readData = new ReadData();
 
-    String nameInserted = readData.readString();
+    String stringInserted = readData.readString();
 
-    System.out.println("Your name is: " + nameInserted);
+    readData.setInputString();
+
+    System.out.println("Your name is: " + readData.getInputString());
   }
-  
+
   public void askForInt() {
 	  System.out.println("Please, enter your age");
-	  
+
 	  ReadData readData = new ReadData();
-	  
-	  int numberInserted = readData.readInt();
-	  
-	  System.out.println("Your age is: " + numberInserted);
+
+	  int intInserted = readData.readInt();
+
+    readData.setIntInserted()
+
+	  System.out.println("Your age is: " + myAccount.getIntInserted);
   }
 }
